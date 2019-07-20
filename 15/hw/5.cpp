@@ -7,39 +7,17 @@
 
 using namespace std;
 
-int getlength(int num){
-	float temp1=0;
-	int flag=0;
-	temp1=num;
-	while(temp1>10)
-	{
-		temp1=temp1/10;
-		flag++;
-    }
-    return flag+1;
-}
-int getsum(int x){
-    int count=1;
-    int nummin[10];
-    int sum=0;
-    for(;;){
-        if(x<pow(10,count)){
-            break;
-        }
-        nummin[count-1]=x%(int)pow(10,count-1)/pow();
-        count++;
-    }
-    for(int i=0;i<count;i++){
-        sum+=nummin[i];
-    }
-    return sum;
+int add_num(int n);
+int add_num(int n){
+    if (n < 10)return n;
+    else return add_num(n / 10) + n % 10;
 }
 int getroot(int x){
     for(;;){
         if(x<10){
             break;
         }
-        x=getsum(x);
+        x=add_num(x);
     }
     return x;
 }
