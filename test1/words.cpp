@@ -26,4 +26,5 @@ int main(void){
     }
     fclose(stdin);
     fclose(stdout);
+    return 0;
 }

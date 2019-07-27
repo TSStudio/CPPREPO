@@ -14,10 +14,10 @@ int main(){
     if(strlen(in)!=strlen(in2)){
         if(strlen(in)<strlen(in2)){
             swap(in,in2);//此处可判断in一定大于in2
-            //转换成数字
-            for(int i=0;i<strlen(in);i++){
-                a[i]=in[i]-'0';
-            }
+        }
+        //转换成数字 
+        for(int i=0;i<strlen(in);i++){
+            a[i]=in[i]-'0';
         }
     }else{
         //转换成数字
@@ -29,7 +29,12 @@ int main(){
         }
         //位数相同 从最高位开始比
         for(int i=0;i<strlen(in);i++){
-            
+            if(a[i]!=b[i]){
+                if(a[i]<b[i]){
+                    swap(a,b);
+                }
+                break;
+            }
         }
     }
 
