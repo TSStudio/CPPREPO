@@ -21,18 +21,21 @@ int buildTree(int bt){
     }
     return bt;
 } 
-//计算结点数
-int Node(int bt){
+//计算叶子数
+int Leaf(int bt){
     if(bt){
-        if(data[bt].left == 0 && data[bt].right == 0)  return 1;
-        else return Node(data[bt].left)+Node(data[bt].right) + 1;
+        if(data[bt].left == 0 && data[bt].right == 0){
+            return 1;
+        }
+        else return Leaf(data[bt].left)+Leaf(data[bt].right);
     }
     else return 0;
-} 
-int main(){
+}
+int main()
+{
     root = 0;
     cnt = 0;
     root = buildTree(0);
-    cout << Node(root) << endl;
+    cout << Leaf(root) << endl;
     return 0;
 }
