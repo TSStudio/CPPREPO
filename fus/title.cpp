@@ -1,5 +1,5 @@
 #include<iostream>
-#include<cstdio>qx
+#include<cstdio>
 using namespace std;
 
 int main(void){
