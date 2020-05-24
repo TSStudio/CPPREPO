@@ -18,7 +18,7 @@ int main(void){
             }  
         }  
         if(flag)  
-           break;  
+           break;
         k++;
     }
     cout<<num;
