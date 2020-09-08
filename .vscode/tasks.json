@@ -6,6 +6,7 @@
             "label": "build",
             "command": "J:\\TDM-GCC-64\\bin\\g++.exe",
             "args": [
+                "-fexec-charset=GBK",
                 "-g",
                 "${file}",
                 "-o",
