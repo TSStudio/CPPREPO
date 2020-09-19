@@ -24,12 +24,12 @@ traverse_dir()
  
 check_suffix()
 {
-    file=$1
+    fil=$1
     
-    if [ "${file##*.}"x = "cpp"x ];then
-        echo $file
-        g++ $file -o ${file%.*}
-        rm $file
+    if [ "${fil##*.}"x = "cpp"x ];then
+        echo $fil
+        g++ $fil -o ${fil%.*}
+        rm $fil
     fi    
 }
 traverse_dir /var/lib/jenkins/workspace/CPPREPO
