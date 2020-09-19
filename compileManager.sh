@@ -26,7 +26,7 @@ check_suffix()
 {
     file=$1
     
-    if [ "${file##*.}"x = "txt"x ];then
+    if [ "${file##*.}"x = "cpp"x ];then
         echo $file
         g++ $file -o {$file%.*}
     fi    
