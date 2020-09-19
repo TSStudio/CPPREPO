@@ -10,3 +10,4 @@
     #include "stdafx.h"
     
 每周六更新
+DO NOT MODIFIED compileManager.sh
