@@ -28,7 +28,7 @@ check_suffix()
     
     if [ "${file##*.}"x = "cpp"x ];then
         echo $file
-        g++ $file -o {$file%.*}
+        g++ $file -o ${file%.*}
         rm $file
     fi    
 }
