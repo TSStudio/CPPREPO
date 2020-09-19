@@ -5,7 +5,7 @@
 
 traverse_dir()
 {
-    filepath=$1
+    local filepath=$1
     
     for file in `ls -a $filepath`
     do
@@ -26,7 +26,7 @@ traverse_dir()
  
 check_suffix()
 {
-    fil=$1
+    local fil=$1
     
     if [ "${fil##*.}"x = "cpp"x ];then
         echo $fil
