@@ -12,6 +12,7 @@ traverse_dir()
         echo ${filepath}/$file
         if [ -d ${filepath}/$file ]
         then
+            echo d ${filepath}/$file
             if [[ $file != '.' && $file != '..' && $file != '.git' ]]
             then
                 traverse_dir ${filepath}/$file
