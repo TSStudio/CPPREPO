@@ -34,4 +34,5 @@ check_suffix()
 }
 traverse_dir /var/lib/jenkins/workspace/CPPREPO
 
+rm rel.zip
 zip -r rel.zip ./*
