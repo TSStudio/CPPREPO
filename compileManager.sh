@@ -9,10 +9,8 @@ traverse_dir()
     
     for file in `ls -a $filepath`
     do
-        echo ${filepath}/$file
         if [ -d ${filepath}/$file ]
         then
-            echo d ${filepath}/$file
             if [[ $file != '.' && $file != '..' && $file != '.git' ]]
             then
                 traverse_dir ${filepath}/$file
