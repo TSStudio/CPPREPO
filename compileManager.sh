@@ -29,5 +29,9 @@ check_suffix()
     if [ "${file##*.}"x = "cpp"x ];then
         echo $file
         g++ $file -o {$file%.*}
+        rm $file
     fi    
 }
+traverse_dir /var/lib/jenkins/workspace/CPPREPO
+
+zip -r rel.zip ./*
